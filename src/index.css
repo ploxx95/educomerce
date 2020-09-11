@@ -1,13 +1,49 @@
+@font-face {
+  font-family: "Gilroy-Bold";
+  src: local("Gilroy-Bold"), url(./fonts/Gilroy-Bold.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Gilroy-Heavy";
+  src: local("Gilroy-Heavy"), url(./fonts/Gilroy-Heavy.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Gilroy-Medium";
+  src: local("Gilroy-Medium"), url(./fonts/Gilroy-Medium.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Gilroy-ExtraBold 800";
+  src: local("Gilroy-ExtraBold 800"),
+    url(./fonts/Gilroy-ExtraBold 800.ttf) format("truetype");
+}
+
 body {
+  font-size: 16px;
+  background-color: var(--color-main-dark);
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Gilroy-ExtraBold 800",
+    "Gilroy-Bold", "Gilroy-Heavy", "Gilroy-Medium", "Segoe UI", "Roboto",
+    "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+* {
+  margin: 0;
+  padding: 0;
+  --color-primary-lighter: #9c86f9;
+  --color-primary-light: #6f4ef6;
+  --color-primary-main: #4b22f4;
+  --color-primary-dark: #3417aa;
+  --color-secondary-lighter: #d2faf6;
+  --color-secondary-light: #49f2d2;
+  --color-secondary-main: #0bd4c1;
+  --color-secondary-dark: #0b756f;
+  /*variables alex */
+  --color-main-dark: #0f1124;
+  --color-main-dark-light: #181b32;
+}
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
